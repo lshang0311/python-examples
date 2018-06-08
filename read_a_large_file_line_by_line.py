@@ -15,3 +15,10 @@ with open(full_file_name) as f:
     for line in f:
         print('line {}: {}'.format(cnt, line.strip()))
         cnt += 1
+print(cnt)
+
+# one-liner
+with open(full_file_name) as f:
+    cnt = 0
+    cnt = sum(1 for line in f)
+print(cnt)
