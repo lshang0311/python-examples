@@ -6,7 +6,7 @@ https://stackoverflow.com/questions/42480006/merge-two-text-files-alternating-li
 
 """
 
-path = r"../data"
+path = r"./data"
 path = os.path.abspath(path)
 file_name_1 = 'file_1.csv'
 file_name_2 = 'file_2.csv'
