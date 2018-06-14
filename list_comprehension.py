@@ -67,3 +67,21 @@ print([[row[i] for row in matrix] for i in range(3)])
 # nested list comprehension - initialize a matrix
 matrix = [[0 for col in range(4)] for row in range(3)]
 print(matrix)
+
+print("--- More examples ---")
+print("Example:")
+a_list = ["1", 0, "12", "3", "4", "17", 2]
+# a_list.sort() # error
+print(a_list)
+
+is_int = [isinstance(x, int) for x in a_list]
+assert all(is_int) is False, ""
+print(a_list)
+
+a_list = [int(i) for i in a_list]
+is_int = [isinstance(x, int) for x in a_list]
+assert all(is_int) is True, ""
+print(a_list)
+
+a_list.sort()
+print(a_list)
