@@ -25,6 +25,7 @@ def sent_vectorizer(sent, model):
     return np.asarray(sent_vec) / numw
 
 
+# download 'wiki-news-300d-1M.vec' from https://fasttext.cc/docs/en/english-vectors.html
 model = KeyedVectors.load_word2vec_format('wiki-news-300d-1M.vec')
 print(model.most_similar('desk'))
 
